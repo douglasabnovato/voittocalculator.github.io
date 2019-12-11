@@ -10,7 +10,7 @@ export default class Teclado extends React.Component{
         return(                                      
             <div>
                 <br />
-                <Botao type="reset" value="c"/>
+                <Botao type="reset" value="C"/>
                 <Botao type="button" value="+/-"/>
                 <Botao type="button" value="%"/>
                 <Botao type="button" value="/"/>
