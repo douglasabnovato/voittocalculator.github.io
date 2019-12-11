@@ -4,7 +4,7 @@
 > Voitto Treinamentos - Calculadora em ReactJS <br/>
 > `https://codepen.io/anderson-amorim/pen/MWYKvxb`
 1. separei o front end em componentes.
-2. utilizei a arquitetura Flux no projeto, sendo uma forma de fluxo unidirecional de dados entre eventos e ouvintes.
+2. utilizei a arquitetura Flux no projeto,as views, os stores, os dipatchers e as actions, sendo uma forma de fluxo unidirecional de dados entre eventos e ouvintes.
 3. acrescentei funcionalidades a calculadora: ".", "pi", "+/-", "%"
 
 :. por @douglasabnovato
