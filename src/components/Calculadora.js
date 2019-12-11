@@ -5,7 +5,7 @@ import Visor from './Visor';
 
 import "./App.css";
 
-import { calculadoraStore } from '../flux/CalculadoraStore';
+import { calculadoraStore } from './../flux/CalculadoraStore';
 
 export default class Calculadora extends React.Component{
     
@@ -32,7 +32,12 @@ export default class Calculadora extends React.Component{
 
                 <form name="calculator">
                     <Visor type="textfield" name="ans" value={this.state.valorDoDisplay} />                                     
-                    <Teclado/>
+                    <Teclado valorNaMemoria={this.state.resultadoUltimaOperacao} 
+                            operacaoAnterior={this.state.operacaoAritmetica} 
+                            valorVisor={this.state.valorDoDisplay} 
+                            limparNaProximaOperacao={this.state.limparVisor}
+                            entradaDecimal={this.state.modoDeEntradaDecimal} 
+                    />
                 </form>
 
                 <p>
