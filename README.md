@@ -2,5 +2,6 @@
 #### Atualizado em 11/12/2019
 
 > Voitto Treinamentos - Calculadora em ReactJS
+1. separei o front end em componentes.
 
 :. por @douglasabnovato

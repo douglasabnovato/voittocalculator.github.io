@@ -11,14 +11,7 @@ export default class Teclado extends React.Component{
         
         return(
             
-            <div id="teclado">
-
-                <p>
-                    <h3 align="center">
-                        Voitto Treinamentos<br />
-                        Implemente as funcionalidades da calculadora utilizando React.js.
-                    </h3>
-                </p>
+            <div id="teclado">                
 
                 <form name="calculator">
                     <Visor type="textfield" name="ans" value="0" />
