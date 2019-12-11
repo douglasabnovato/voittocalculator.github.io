@@ -3,3 +3,5 @@
 
 > Voitto Treinamentos - Calculadora em ReactJS
 
+:. por @douglasabnovato
+
