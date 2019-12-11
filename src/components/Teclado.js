@@ -16,7 +16,7 @@ export default class Teclado extends React.Component{
                 <form name="calculator">
                     <Visor type="textfield" name="ans" value="0" />
                     <br />
-                    <Botao type="reset" value="c"/>
+                    <Botao type="reset" value="C"/>
                     <Botao type="button" value="+/-"/>
                     <Botao type="button" value="%"/>
                     <Botao type="button" value="/"/>
