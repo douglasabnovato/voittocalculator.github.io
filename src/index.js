@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom"; 
 
-import App from "./App/App";
+import Calculator from './components/Calculadora';
 
 ReactDOM.render(
     
-    <App />,  
-
-    document.getElementById("root")
+    <div>
+        <Calculator />
+    </div>,
+    
+    document.getElementById("main")
 );
