@@ -13,11 +13,20 @@ import { calculadoraStore } from '../flux/CalculadoraStore';
 
 export default class Calculadora extends React.Component{
     
+    /**
+     * setando um estado inicial
+     * passamos os valores do estado via props
+     */
     constructor(props){
         super(props)
         this.state = calculadoraStore.getState()
     }
 
+    /**
+     * O método  componentWillMount() faz parte do ciclo de vida 
+     * dos componentes react e é invocado apenas uma vez antes 
+     * da primeira renderização do componente
+     */
     componentWillMount(){
         calculadoraStore.on('change', ()=>{
             this.setState(calculadoraStore.getState())
@@ -34,6 +43,7 @@ export default class Calculadora extends React.Component{
                 </p>
 
                 <form name="calculator">
+                    {/*a forma como passamos valor para o componente visor*/}
                     <Visor type="textfield" value={this.state.valorDoDisplay} />                                     
                     <Teclado 
                         valorNaMemoria={this.state.resultadoUltimaOperacao} 

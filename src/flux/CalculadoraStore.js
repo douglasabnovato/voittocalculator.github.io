@@ -1,7 +1,15 @@
 import EventEmmiter from 'events';
 import Action from './Constants';
 import {appDispatcher} from './AppDispatcher';
-const CHANGE = 'change';
+
+/**
+ * O store da nossa calculadora
+ * toda vez que algo muda, emitimos o evento change
+ * e por isso, os componentes registrados para 
+ * receber atualizações desse store, sempre serão notificados.
+ */
+
+    const CHANGE = 'change';
 
     let _store = {
         valorDoDisplay:'0',
@@ -62,6 +70,11 @@ const CHANGE = 'change';
             return _store
         }
 
+        /**
+         * Criamos essa função que vai receber as actions e 
+         * de acordo com o tipo de ação recebida vai invocar um 
+         * método diferente.
+         */
         handleActions(action){
 
             switch(action.type){
@@ -90,6 +103,7 @@ const CHANGE = 'change';
             }
         }
     }
+
     export let calculadoraStore = new CalculadoraStore();
     
     appDispatcher.register(calculadoraStore.handleActions.bind(calculadoraStore));

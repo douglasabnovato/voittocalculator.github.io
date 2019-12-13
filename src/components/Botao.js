@@ -20,7 +20,10 @@ export default class Botao extends React.Component{
             />
         )
     }
-
+    /**
+     * função para tratar os cliques nos botões e chamar as actions, 
+     * fazendo a calculadora funcionar
+     */
     click(e){
         switch(this.props.value){
             case '0':

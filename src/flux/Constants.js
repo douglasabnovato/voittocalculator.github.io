@@ -1,3 +1,8 @@
+/**
+ * listar todos os possíveis nomes das actions que podem ser 
+ * recebidas pelo nosso store como constantes
+ */
+
 export default {
     ATUALIZA_VISOR: 'ATUALIZA_VISOR',
     GUARDA_VALOR:'GUARDA_VALOR',

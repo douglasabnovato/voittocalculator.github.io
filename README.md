@@ -27,15 +27,16 @@
 4. Ciclo completo do Flux : **View –> Action –> Dispatcher –>Store –> View**
 
 5. Arquitetura do Flux :
+- View : trata-se dos componentes visuais
 - Stores : os **view models** das aplicações tradicionais. As views se inscreverão para receber as mudanças, logo, toda vez que houver uma mudança nos stores, as views correspondentes serão notificadas e renderizadas para refletir tais mudanças.
 - Actions 
-- Dispatcher
+- Dispatcher : responsável por receber os dados das actions e enviar esses dados para todos os stores
 
 6. Nossa calculadora
-    > A primeira informação a ser armazenada pela nossa calculadora é o valor do display.<br/> 
+    > A primeira informação a ser armazenada pela nossa calculadora é o valor do display. <br/> 
     > A segunda é quando o usuário clicar na vírgula, haverá necessidade de entrar em modo “decimal” de operação, ou seja, todos os números digitados serão adicionados após a vírgula. <br/> 
     > A terceira variável guardará a operação a ser executada. <br/> 
-    > A quarta vai guardar o segundo valor numérico digitado / resultado da operação anterior. Isso porque, precisamos de dois valores para executar a operação corrente, a atual do visor e o valor anterior.<br/>
+    > A quarta vai guardar o segundo valor numérico digitado / resultado da operação anterior. Isso porque, precisamos de dois valores para executar a operação corrente, a atual do visor e o valor anterior. <br/>
     > E a última, uma flag que marcará se a calculadora precisa ter o visor limpo quando o usuário apertar o próximo botão.
 
 :. Por Douglas A B Novato - `@douglasabnovato`

@@ -1,5 +1,10 @@
-import {appDispatcher} from './AppDispatcher';
+import { appDispatcher } from './AppDispatcher';
 import Action from './Constants';
+
+/**
+ * Toda a lógica do funcionamento da nossa calculadora
+ * está contido nesse arquivo
+ */
 
 export function atualizarVisor(valorAntigo,valorPressionado,limparDisplayNaProximaOperacao,modoDeEntradaDecimal){
     
