@@ -35,7 +35,15 @@ export default class Botao extends React.Component{
             case '6':
             case '7':
             case '8':
-            case '9':
+            case '9':             
+                Action.atualizarVisor(
+                    this.props.valorVisor,
+                    this.props.value,
+                    this.props.limparNaProximaOperacao,
+                    this.props.entradaDecimal
+                )
+                break;
+            case 'pi':
                 Action.atualizarVisor(
                     this.props.valorVisor,
                     this.props.value,
