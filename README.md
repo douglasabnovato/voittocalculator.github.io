@@ -25,5 +25,6 @@
 ![Frontend-Calculator](/images/frontend-calculator.jpg)
 
 4. a lógica de funcionamento da nossa calculadora está no arquivo : `src/flux/CalculadoraActions.js`
+5. ciclo completo - Flux : **View –> Action –> Dispatcher –>Store –> View**
 
 :. Por Douglas A B Novato - `@douglasabnovato`
