@@ -1,6 +1,6 @@
 ### Calculator in ReactJS
 
-#### Atualização: 13 de dezembro de 2019 - 14:36
+#### Atualização: 13 de dezembro de 2019 - 16:05
 #### Criação: 08 de dezembro de 2019
 #### Prática : @douglasabnovato
 
