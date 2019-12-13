@@ -5,6 +5,11 @@ import Visor from './Visor';
 
 import { calculadoraStore } from '../flux/CalculadoraStore';
 
+/**
+ * Componente Calculadora que renderiza dois outros componentes:
+ * Visor : local de inserir e visualizar resultados de cálculos
+ * Teclado : determina as variáveis manipuladas nos cálculos
+ */
 
 export default class Calculadora extends React.Component{
     

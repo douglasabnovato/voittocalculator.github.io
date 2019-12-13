@@ -1,6 +1,11 @@
 import React from 'react';
 import * as Action from '../flux/CalculadoraActions';
 
+/**
+ * Componente Botao que renderiza um input e chama as actions
+ * conforme sua respectiva função na calculadora
+ */
+
 export default class Botao extends React.Component{
     
     constructor(props){

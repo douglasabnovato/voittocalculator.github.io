@@ -2,6 +2,11 @@ import React from 'react';
 
 import Botao from './Botao';
 
+/**
+ * Componente Teclado que renderiza todos os botões
+ * Botao : componente que chama as actions conforme seu tipo e sua função
+ */
+
 export default class Teclado extends React.Component{
 
     constructor(props){

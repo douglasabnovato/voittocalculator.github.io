@@ -24,7 +24,18 @@
 
 ![Frontend-Calculator](/images/frontend-calculator.jpg)
 
-4. a lógica de funcionamento da nossa calculadora está no arquivo : `src/flux/CalculadoraActions.js`
-5. ciclo completo - Flux : **View –> Action –> Dispatcher –>Store –> View**
+4. Ciclo completo do Flux : **View –> Action –> Dispatcher –>Store –> View**
+
+5. Arquitetura do Flux :
+- Stores : os **view models** das aplicações tradicionais. As views se inscreverão para receber as mudanças, logo, toda vez que houver uma mudança nos stores, as views correspondentes serão notificadas e renderizadas para refletir tais mudanças.
+- Actions 
+- Dispatcher
+
+6. Nossa calculadora
+1. A primeira informação a ser armazenada pela nossa calculadora é o valor do display. 
+2. A segunda é quando o usuário clicar na vírgula, haverá necessidade de entrar em modo “decimal” de operação, ou seja, todos os números digitados serão adicionados após a vírgula. 
+3. A terceira variável guardará a operação a ser executada. 
+4. A quarta vai guardar o segundo valor numérico digitado / resultado da operação anterior. Isso porque, precisamos de dois valores para executar a operação corrente, a atual do visor e o valor anterior. 
+5. E finalmente, uma flag que marcará se a calculadora precisa ter o visor limpo quando o usuário apertar o próximo botão.
 
 :. Por Douglas A B Novato - `@douglasabnovato`
