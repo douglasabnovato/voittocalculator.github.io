@@ -3,9 +3,8 @@ import React from 'react';
 import Teclado from './Teclado';
 import Visor from './Visor';
 
-import "./App.css";
+import { calculadoraStore } from '../flux/CalculadoraStore';
 
-import { calculadoraStore } from './../flux/CalculadoraStore';
 
 export default class Calculadora extends React.Component{
     
@@ -13,37 +12,29 @@ export default class Calculadora extends React.Component{
         super(props)
         this.state = calculadoraStore.getState()
     }
-    
+
     componentWillMount(){
-        calculadoraStore.on('change', () => {
-            this.setState( calculadoraStore.getState() )
+        calculadoraStore.on('change', ()=>{
+            this.setState(calculadoraStore.getState())
         })
     }
 
     render(){
 
         return ( 
-            <div id="calculadora"> 
-                <p>
-                    <h3 align="center">
-                        Voitto Treinamentos - Calculadora em React.js<br />
-                    </h3>
+            <div> 
+
+                <p align="center"> 
+                    Voitto - Calculator in ReactJS 
                 </p>
 
                 <form name="calculator">
-                    <Visor type="textfield" name="ans" value={this.state.valorDoDisplay} />                                     
-                    <Teclado valorNaMemoria={this.state.resultadoUltimaOperacao} 
-                            operacaoAnterior={this.state.operacaoAritmetica} 
-                            valorVisor={this.state.valorDoDisplay} 
-                            limparNaProximaOperacao={this.state.limparVisor}
-                            entradaDecimal={this.state.modoDeEntradaDecimal} 
-                    />
+                    <Visor type="textfield" value={this.state.valorDoDisplay} />                                     
+                    <Teclado />
                 </form>
 
-                <p>
-                    <h4 align="center">
-                        @douglasabnovato <br />
-                    </h4>
+                <p align="center">
+                    @douglasabnovato 
                 </p>
             </div>
             

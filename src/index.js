@@ -3,11 +3,9 @@ import ReactDOM from "react-dom";
 
 import Calculator from './components/Calculadora';
 
+import "./components/App.css"
+
 ReactDOM.render(
-    
-    <div>
-        <Calculator />
-    </div>,
-    
-    document.getElementById("main")
+    <Calculator />,    
+    document.getElementById("app")
 );

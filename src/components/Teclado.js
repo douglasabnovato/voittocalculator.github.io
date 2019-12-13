@@ -2,16 +2,17 @@ import React from 'react';
 
 import Botao from './Botao';
 
-
 export default class Teclado extends React.Component{
-    
+
     render(){
         
-        return(                                      
-            <div>
+        return( 
+            
+            <div name="keyboard">
+
                 <br />
-                <Botao type="reset" value="C"/>
-                <Botao type="button" value="+/-"/>
+                <Botao type="reset" value="C" />
+                <Botao type="button" value="+/-" />
                 <Botao type="button" value="%"/>
                 <Botao type="button" value="/"/>
                 <br />
@@ -20,23 +21,23 @@ export default class Teclado extends React.Component{
                 <Botao type="button" value="3"/>
                 <Botao type="button" value="+"/>
                 <br />
-                <Botao type="button" value="4" />
+                <Botao type="button" value="4"/>
                 <Botao type="button" value="5"/>
-                <Botao type="button" value="6" />
+                <Botao type="button" value="6"/>
                 <Botao type="button" value="-"/>
                 <br />
-                <Botao type="button" value="7" />
-                <Botao type="button" value="8" />
+                <Botao type="button" value="7"/>
+                <Botao type="button" value="8"/>
                 <Botao type="button" value="9"/>
-                <Botao type="button" value="*" />
+                <Botao type="button" value="*"/>
                 <br />
                 <Botao type="button" value="0"/>
                 <Botao type="button" value="."/>
                 <Botao type="button" value="pi"/>
                 <Botao type="button" value="="/>
+
             </div>
         )
-
     }
     
 }
