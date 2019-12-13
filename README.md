@@ -32,10 +32,10 @@
 - Dispatcher
 
 6. Nossa calculadora
-    > A primeira informação a ser armazenada pela nossa calculadora é o valor do display. 
-    > A segunda é quando o usuário clicar na vírgula, haverá necessidade de entrar em modo “decimal” de operação, ou seja, todos os números digitados serão adicionados após a vírgula. 
-    > A terceira variável guardará a operação a ser executada. 
-    > A quarta vai guardar o segundo valor numérico digitado / resultado da operação anterior. Isso porque, precisamos de dois valores para executar a operação corrente, a atual do visor e o valor anterior. 
+    > A primeira informação a ser armazenada pela nossa calculadora é o valor do display.<br/> 
+    > A segunda é quando o usuário clicar na vírgula, haverá necessidade de entrar em modo “decimal” de operação, ou seja, todos os números digitados serão adicionados após a vírgula. <br/> 
+    > A terceira variável guardará a operação a ser executada. <br/> 
+    > A quarta vai guardar o segundo valor numérico digitado / resultado da operação anterior. Isso porque, precisamos de dois valores para executar a operação corrente, a atual do visor e o valor anterior.<br/>
     > E a última, uma flag que marcará se a calculadora precisa ter o visor limpo quando o usuário apertar o próximo botão.
 
 :. Por Douglas A B Novato - `@douglasabnovato`
