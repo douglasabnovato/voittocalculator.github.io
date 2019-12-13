@@ -20,9 +20,9 @@ export default class Calculadora extends React.Component{
     }
 
     render(){
-
+ 
         return ( 
-            <div> 
+            <div id="calculator"> 
 
                 <p align="center"> 
                     Voitto - Calculator in ReactJS 
@@ -30,7 +30,13 @@ export default class Calculadora extends React.Component{
 
                 <form name="calculator">
                     <Visor type="textfield" value={this.state.valorDoDisplay} />                                     
-                    <Teclado />
+                    <Teclado 
+                        valorNaMemoria={this.state.resultadoUltimaOperacao} 
+                        operacaoAnterior={this.state.operacaoAritmetica} 
+                        valorVisor={this.state.valorDoDisplay} 
+                        limparNaProximaOperacao={this.state.limparVisor}
+                        entradaDecimal={this.state.modoDeEntradaDecimal} 
+                    />
                 </form>
 
                 <p align="center">
