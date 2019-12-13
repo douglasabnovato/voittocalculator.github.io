@@ -29,7 +29,7 @@
 5. Arquitetura do Flux :
 - View : trata-se dos componentes visuais
 - Stores : os **view models** das aplicações tradicionais. As views se inscreverão para receber as mudanças, logo, toda vez que houver uma mudança nos stores, as views correspondentes serão notificadas e renderizadas para refletir tais mudanças.
-- Actions 
+- Actions : Toda a lógica do funcionamento da nossa calculadora : `CalculadoraActions.js`
 - Dispatcher : responsável por receber os dados das actions e enviar esses dados para todos os stores
 
 6. Nossa calculadora
