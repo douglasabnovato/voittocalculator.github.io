@@ -18,6 +18,9 @@
 
 > Voitto Treinamentos - Calculadora em ReactJS <br/>
 > Desafio em proposto em : `https://codepen.io/anderson-amorim/pen/MWYKvxb`
+> Proposta de solução : Reactjs com arquitetura Flux.
+
+#### Detalhes do projeto
 1. separei o front end em componentes ReactJS: `https://pt-br.reactjs.org/docs/getting-started.html`
 2. utilizei a arquitetura Flux no projeto,as views, os stores, os dipatchers e as actions, sendo uma forma de fluxo unidirecional de dados entre eventos e ouvintes: `https://facebook.github.io/flux/docs/overview`
 3. acrescentei funcionalidades a calculadora: ".", "pi", "+/-", "%"
